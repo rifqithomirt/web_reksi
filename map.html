@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html class="loading" lang="en" data-textdirection="ltr">
+<!-- BEGIN: Head-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="description" content="Materialize is a Material Design Admin Template,It&#39;s modern, responsive and based on Material Design by Google.">
+    <meta name="keywords" content="materialize, admin template, dashboard template, flat admin template, responsive admin template, eCommerce dashboard, analytic dashboard">
+    <meta name="author" content="ThemeSelect">
+    <title>REAKSI</title>
+    <link rel="apple-touch-icon" href="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/favicon/apple-touch-icon-152x152.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://pixinvent.com/materialize-material-design-admin-template/app-assets/images/favicon/favicon-32x32.png">
+    <link href="./assets/icon" rel="stylesheet">
+    <!-- BEGIN: VENDOR CSS-->
+    <link rel="stylesheet" type="text/css" href="./assets/vendors.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/animate.css">
+    <!-- END: VENDOR CSS-->
+    <!-- BEGIN: Page Level CSS-->
+    <link rel="stylesheet" type="text/css" href="./assets/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/style.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/dashboard-modern.css">
+    <link rel="stylesheet" type="text/css" href="./assets/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/datatable.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/leaflet.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+    <!-- END: Page Level CSS-->
+    <!-- BEGIN: Custom CSS-->
+    <link rel="stylesheet" type="text/css" href="./assets/custom.css">
+    <!-- END: Custom CSS-->
+    <style type="text/css">
+    @font-face {
+        font-family: 'Material Icons';
+        font-style: normal;
+        font-weight: 400;
+        src: url(iconfont/MaterialIcons-Regular.eot);
+        /* For IE6-8 */
+        src: local('Material Icons'),
+            local('MaterialIcons-Regular'),
+            /* Old file: url(iconfont/MaterialIcons-Regular.woff2) format('woff2'), */
+            /* load new file */
+            url(fonts/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2'),
+            url(iconfont/MaterialIcons-Regular.ttf) format('truetype');
+    }
+
+    .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
+        letter-spacing: normal;
+        text-transform: none;
+        display: inline-block;
+        white-space: nowrap;
+        word-wrap: normal;
+        direction: ltr;
+        -webkit-font-feature-settings: 'liga';
+        -webkit-font-smoothing: antialiased;
+    }
+    </style>
+</head>
+<!-- END: Head-->
+
+<body class="vertical-layout vertical-menu-collapsible page-header-dark vertical-modern-menu 2-columns" data-open="click" data-menu="vertical-modern-menu" data-col="2-columns" style="">
+    <!-- BEGIN: Header-->
+    <header class="page-topbar" id="header">
+        <div class="navbar navbar-fixed">
+            <nav class="navbar-main navbar-color nav-collapsible sideNav-lock navbar-dark gradient-45deg-indigo-purple no-shadow">
+                <div class="nav-wrapper">
+                    <ul class="navbar-list right">
+                        <li class="hide-on-med-and-down"><a class="waves-effect waves-block waves-light toggle-fullscreen" href="javascript:void(0);"><i class="material-icons">settings_overscan</i></a></li>
+                        <li class="hide-on-large-only search-input-wrapper"><a class="waves-effect waves-block waves-light search-button" href="javascript:void(0);"><i class="material-icons">search</i></a></li>
+                        <li><a class="waves-effect waves-block waves-light notification-button" href="javascript:void(0);" data-target="notifications-dropdown"><i class="material-icons">notifications_none<small class="notification-badge">5</small></i></a>
+                            <ul class="dropdown-content" id="notifications-dropdown" tabindex="0">
+                                <li tabindex="0">
+                                    <h6>NOTIFICATIONS<span class="new badge">5</span></h6>
+                                </li>
+                                <li class="divider" tabindex="0"></li>
+                                <li tabindex="0"><a class="black-text" href="#"><span class="material-icons icon-bg-circle cyan small">add_shopping_cart</span> A new order has been placed!</a>
+                                    <time class="media-meta grey-text darken-2" datetime="2015-06-12T20:50:48+08:00">2 hours ago</time>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="waves-effect waves-block waves-light profile-button" href="javascript:void(0);" data-target="profile-dropdown"><span class="avatar-status avatar-online"><img src="./assets/avatar-7.png" alt="avatar"><i></i></span></a>
+                            <ul class="dropdown-content" id="profile-dropdown" tabindex="0">
+                                <li tabindex="0"><a class="grey-text text-darken-1" href="#"><i class="material-icons">person_outline</i> Profile</a></li>
+                                <li tabindex="0"><a class="grey-text text-darken-1" href="#"><i class="material-icons">keyboard_tab</i> Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- END: Header-->
+    <!-- BEGIN: SideNav-->
+    <aside class="sidenav-main nav-collapsed nav-collapsible sidenav-light sidenav-active-square">
+        <div class="brand-sidebar">
+            <h1 class="logo-wrapper"><a class="brand-logo darken-1" href="">
+                    <img class="hide-on-med-and-down" src="./assets/materialize-logo-color.png" alt="materialize logo"><img class="show-on-medium-and-down hide-on-med-and-up" src="./assets/materialize-logo.png" alt="materialize logo">
+                    <span class="logo-text hide-on-med-and-down">Materialize</span></a>
+                <a class="navbar-toggler" href=""><i class="material-icons">radio_button_checked</i></a>
+            </h1>
+        </div>
+        <ul class="sidenav sidenav-collapsible leftside-navigation collapsible sidenav-fixed menu-shadow ps ps--active-y" id="slide-out" data-menu="menu-navigation" data-collapsible="menu-accordion" style="transform: translateX(0px);">
+            <li class="active bold open"><a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)" tabindex="0"><i class="material-icons">settings_input_svideo</i><span class="menu-title" data-i18n="Dashboard">Dashboard</span></a>
+                <div class="collapsible-body" style="display: block;">
+                    <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+                        <li class="active"><a class="active" href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Modern">Modern</span></a>
+                        </li>
+                        <li><a href="./table.html"><i class="material-icons">radio_button_unchecked</i><span data-i18n="eCommerce">eCommerce</span></a>
+                        </li>
+                        <li><a href="#"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Analytics">Analytics</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="bold"><a class="collapsible-header waves-effect waves-cyan " href="JavaScript:void(0)" tabindex="0"><i class="material-icons">dvr</i><span class="menu-title" data-i18n="Templates">Templates</span></a>
+                <div class="collapsible-body">
+                    <ul class="collapsible collapsible-sub" data-collapsible="accordion">
+                        <li><a class="collapsible-header waves-effect waves-cyan" href="JavaScript:void(0)" tabindex="0"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Vertical">Vertical</span></a>
+                        </li>
+                        <li><a class="collapsible-header waves-effect waves-cyan" href="JavaScript:void(0)" tabindex="0"><i class="material-icons">radio_button_unchecked</i><span data-i18n="Horizontal">Horizontal</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </aside>
+    <!-- END: SideNav-->
+    <!-- BEGIN: Page Main-->
+    <div id="main" class="main-full">
+        <div class="row">
+            <div class="content-wrapper-before gradient-45deg-indigo-purple"></div>
+            <div class="col s12">
+                <div class="container">
+                    <div class="section">
+                        <div id="mapid" style="height: 600px;"></div>
+                    </div>
+                </div>
+                <div class="content-overlay"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END: Footer-->
+    <!-- BEGIN VENDOR JS-->
+    <script src="./assets/vendors.min.js"></script>
+    <!-- BEGIN VENDOR JS-->
+    <!-- BEGIN PAGE VENDOR JS-->
+    <script src="./assets/jquery.dataTables.min.js"></script>
+    <!-- END PAGE VENDOR JS-->
+    <!-- BEGIN THEME  JS-->
+    <script src="./assets/plugins.min.js"></script>
+    <script src="./assets/custom-script.min.js"></script>
+    <script src="./assets/customizer.min.js"></script>
+    <script src="./assets/leaflet.js"></script>
+    <!-- END THEME  JS-->
+    <!-- BEGIN PAGE LEVEL JS-->
+    <script src="./assets/dashboard-modern.js"></script>
+
+    <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+    <!-- END PAGE LEVEL JS-->
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('#page-length-option').DataTable();
+    });
+
+    var map = L.map('mapid').setView([-7.4959, 112.1182], 13);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+    L.Routing.control({
+  waypoints: [
+    L.latLng(-6.2008406,106.7987143),
+    L.latLng(-6.2008406,107.7987143)
+  ]
+}).addTo(map);
+    </script>
+</body>
+
+</html>
