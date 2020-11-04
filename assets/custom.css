@@ -1,0 +1,45 @@
+/*================================================================================
+	Item Name: Materialize - Material Design Admin Template
+	Version: 5.0
+	Author: PIXINVENT
+	Author URL: https://themeforest.net/user/pixinvent/portfolio
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN CSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+a.waves-cyan i {
+	padding-top: 4px;
+}
+
+img.logofull {
+	height: 34px !important;
+}
+
+.sidenav-active-square.nav-collapsed li a.collapsible-header, .sidenav-active-square.nav-collapsed li > a {
+	padding-left: 17px !important;
+}
+
+#subtitle {
+	font-size: 12pt;
+	display: block;
+	padding-top: 5px;
+}
+
+.breadcrumb-item a {
+	color: white;
+}
+
+table.dataTable tbody th, table.dataTable tbody td {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+.btn-small.waves-red {
+	background-color: "#f00000" !important;
+}
+
+.btn.waves-light:hover, .btn-large:hover, .btn-small.waves-light:hover {
+	background-color: "#f00000";
+}

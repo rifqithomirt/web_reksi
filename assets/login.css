@@ -1,8 +1,9 @@
-.login-bg {
+
+/*.login-bg {
   background-image: url("../../images/gallery/flat-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-}
+}*/
 
 #login-page {
   display: -webkit-box;
