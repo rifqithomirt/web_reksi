@@ -1,0 +1,18 @@
+#table_id_filter  {
+    display: block !important;
+    height: auto !important;
+}
+
+.dataTables_filter label input {
+    width: auto !important;
+}
+
+.dataTables_length label select {
+    display: inline-block !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+#table_id_length {
+    display: block !important;
+}
